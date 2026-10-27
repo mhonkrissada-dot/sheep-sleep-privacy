@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>นโยบายความเป็นส่วนตัว – Sheep Sleep</title>
+<link rel="icon" type="image/png" href="icons/favicon-64.png">
+<style>
+@font-face{font-family:'Mali';font-weight:400;font-display:swap;src:url(fonts/Mali-Regular.woff) format('woff')}
+@font-face{font-family:'Mali';font-weight:700;font-display:swap;src:url(fonts/Mali-Bold.woff) format('woff')}
+:root{--bg:#dfe9f0;--card:#f3f8fb;--ink:#2f4558;--sub:#6b8296;--acc:#5f8cb0}
+@media (prefers-color-scheme:dark){:root{--bg:#1d2a38;--card:#273849;--ink:#e6f0f7;--sub:#9db4c6;--acc:#9cc0dc}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.75 'Mali',system-ui,-apple-system,sans-serif;-webkit-text-size-adjust:100%}
+main{max-width:680px;margin:0 auto;padding:calc(20px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) calc(40px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.card{background:var(--card);border-radius:22px;padding:20px 18px;margin-top:14px}
+h1{font-size:22px;margin:6px 0 2px;line-height:1.3}
+h2{font-size:16px;margin:0 0 6px}
+p,li{margin:0 0 8px}ul{padding-left:20px;margin:0}
+.sub{color:var(--sub);font-size:13px}
+a{color:var(--acc)}
+.back{display:inline-block;margin-bottom:6px;font-size:14px}
+</style>
+</head>
+<body>
+<main>
+<a class="back" href="index.html" onclick="if(history.length>1){history.back();return false}">‹ กลับไปที่แอป</a>
+<h1>นโยบายความเป็นส่วนตัว</h1>
+<p class="sub">Sheep Sleep – คำนวณเวลานอน · มีผลตั้งแต่ 11 ตุลาคม 2569 (2026)</p>
+
+<div class="card">
+<h2>สรุปสั้นๆ</h2>
+<p>Sheep Sleep ใช้งานได้ครบโดยไม่ต้องสมัครสมาชิก ข้อมูลที่คุณบันทึกอยู่ในเครื่องของคุณ หากคุณเลือกเข้าสู่ระบบ แอปจะเก็บข้อมูลบัญชีและข้อมูลสำรองที่คุณสั่งสำรองไว้บนคลาวด์ เพื่อให้ย้ายเครื่องได้ แอปไม่ขายข้อมูล มีโฆษณาเฉพาะเมื่อคุณกดดูคลิปเพื่อรับรางวัลเอง และไม่ใช้ข้อมูลเพื่อติดตามคุณ</p>
+</div>
+
+<div class="card">
+<h2>ข้อมูลที่แอปบันทึก (ในเครื่องของคุณ)</h2>
+<ul>
+<li>เวลาเข้านอนและเวลาตื่นที่คุณกดบันทึก</li>
+<li>อารมณ์ประจำวันและโน้ตที่คุณพิมพ์</li>
+<li>ข้อมูลแกะของคุณ (ชื่อ การแต่งตัว ของที่แลก) และเป้าเวลาเข้านอน</li>
+<li>หากเปิดโหมดลูกน้อย: ชื่อเล่นและวันเกิดของลูก และเวลานอนของลูกที่คุณบันทึก</li>
+<li>การตั้งค่า เช่น โหมดมืด/สว่าง และธีมที่เลือก</li>
+</ul>
+<p>ข้อมูลเหล่านี้เก็บไว้ในพื้นที่จัดเก็บของแอปบนอุปกรณ์ของคุณ และจะไม่ถูกส่งออกจากเครื่อง เว้นแต่คุณเข้าสู่ระบบแล้วกด "สำรองขึ้นคลาวด์"</p>
+</div>
+
+<div class="card">
+<h2>บัญชีผู้ใช้ (ไม่บังคับ)</h2>
+<p>คุณเลือกเข้าสู่ระบบได้ด้วย Google, Apple หรืออีเมล เมื่อเข้าสู่ระบบ แอปจะเก็บ:</p>
+<ul>
+<li>อีเมล ชื่อที่ใช้แสดง และรหัสผู้ใช้ จากบริการที่คุณเลือก (แอปไม่ได้รับรหัสผ่าน Google หรือ Apple ของคุณ)</li>
+<li>ข้อมูลในแอป (เวลานอน อารมณ์ โน้ต ข้อมูลแกะ การตั้งค่า และข้อมูลโหมดลูกน้อยถ้าเปิดใช้) ซิงค์ขึ้นคลาวด์อัตโนมัติระหว่างที่เข้าสู่ระบบ เพื่อให้คุณย้ายเครื่องแล้วข้อมูลตามมา ถ้าไม่เข้าสู่ระบบ ข้อมูลจะอยู่ในเครื่องเท่านั้น</li>
+</ul>
+<p>ข้อมูลบัญชีและข้อมูลสำรองเก็บไว้บน Google Firebase ใช้เพื่อให้คุณเข้าสู่ระบบและดึงข้อมูลกลับมาในเครื่องใหม่เท่านั้น ไม่นำไปใช้โฆษณาหรือขายให้ใคร</p>
+<p>คุณออกจากระบบ หรือ <b>ลบบัญชี</b> ได้ทุกเมื่อในเมนูตั้งค่า เมื่อลบบัญชี ข้อมูลบัญชีและข้อมูลสำรองบนคลาวด์จะถูกลบถาวร</p>
+</div>
+
+<div class="card">
+<h2>การสำรองและย้ายข้อมูล</h2>
+<p>เมนู "ส่งออกข้อมูล" จะสร้างไฟล์สำรองให้คุณเก็บเอง คุณเลือกเองว่าจะบันทึกหรือส่งไฟล์นั้นไปที่ใด (เช่น แอปไฟล์ ไดรฟ์ หรืออีเมลของคุณ) แอปไม่ได้อัปโหลดไฟล์นี้ให้ใคร</p>
+</div>
+
+<div class="card">
+<h2>การลบข้อมูล</h2>
+<p>คุณลบข้อมูลได้ทุกเมื่อจากในแอป (ปุ่ม "ล้างบันทึกการนอน", "ล้างข้อมูลเดือนนี้" หรือลบทีละคืน) หรือลบแอปออกจากเครื่อง ซึ่งจะลบข้อมูลทั้งหมดไปด้วย</p>
+</div>
+
+<div class="card">
+<h2>สิทธิ์ที่แอปใช้</h2>
+<p>แอปขอใช้สิทธิ์เท่าที่จำเป็นกับฟีเจอร์ที่คุณเปิดเท่านั้น:</p>
+<ul>
+<li><b>การแจ้งเตือน</b>: ใช้กับนาฬิกาปลุกและการเตือนก่อนเวลานอนที่คุณตั้งเอง การแจ้งเตือนถูกตั้งเวลาไว้ในเครื่อง ไม่ได้ส่งผ่านเซิร์ฟเวอร์</li>
+<li><b>ตั้งปลุกตรงเวลา (Android)</b>: เพื่อให้นาฬิกาปลุกดังตรงเวลาแม้ปิดแอป</li>
+<li><b>เล่นเสียงเบื้องหลัง</b>: เพื่อให้เสียงช่วยหลับเล่นต่อเมื่อล็อกจอ บน Android จะมีการแจ้งเตือนค้างไว้ระหว่างเล่นเสียง</li>
+<li><b>เสียงอ่านของเครื่อง</b>: ใช้เมื่อคุณเปิด "อ่านออกเสียง" เท่านั้น</li>
+</ul>
+<p>แอปไม่ขอเข้าถึงตำแหน่ง รายชื่อ กล้อง ไมโครโฟน หรือรูปภาพของคุณ</p>
+<h2>ทดลองใช้ VIP ฟรี</h2>
+<p>ผู้ใช้ใหม่ใช้ฟีเจอร์ VIP ได้ฟรี 3 วัน ไม่ต้องผูกบัตร ไม่มีการตัดเงินอัตโนมัติ วันเริ่มทดลองเก็บไว้ในเครื่องเท่านั้น หลังหมดช่วงทดลอง คุณเลือกซื้อ VIP แบบจ่ายครั้งเดียวได้ หรือใช้แอปเวอร์ชันฟรีต่อไป</p>
+</div>
+
+<div class="card">
+<h2>บริการของบุคคลที่สาม</h2>
+<p>แอปไม่มีเครื่องมือวิเคราะห์การใช้งาน บริการภายนอกที่แอปใช้มีดังนี้</p>
+<ul>
+<li><b>Google Firebase</b> สำหรับการเข้าสู่ระบบและเก็บข้อมูลสำรอง (เฉพาะเมื่อคุณเข้าสู่ระบบ)</li>
+<li><b>Google Sign-In / Sign in with Apple</b> เมื่อคุณเลือกเข้าสู่ระบบด้วยบริการนั้น</li>
+<li><b>Google Play / App Store และ RevenueCat</b> สำหรับการซื้อและกู้คืนการซื้อ ระบบจะได้รับรหัสผู้ใช้แบบสุ่มและประวัติการซื้อ ผู้พัฒนาไม่ได้รับข้อมูลบัตรของคุณ</li>
+<li><b>Google AdMob</b> สำหรับคลิปโฆษณาแบบดูเพื่อรับรางวัล (เช่น แลกขนแกะ หรือทดลองธีม) โฆษณาจะแสดงเฉพาะเมื่อคุณกดเลือกดูเอง AdMob อาจใช้รหัสโฆษณาของอุปกรณ์ตามที่คุณอนุญาต บน iPhone/iPad แอปจะขออนุญาตก่อนทุกครั้ง คุณปฏิเสธได้และยังดูคลิปได้ตามปกติ</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>ผู้ใช้ที่อายุน้อย</h2>
+<p>แอปนี้ไม่ได้ออกแบบมาสำหรับเด็กอายุต่ำกว่า 13 ปีโดยเฉพาะ และไม่เก็บข้อมูลส่วนบุคคลจากผู้ใช้ทุกช่วงอายุ</p>
+</div>
+
+<div class="card">
+<h2>ไม่ใช่เครื่องมือทางการแพทย์</h2>
+<p>ผลคำนวณเป็นค่าประมาณเพื่อดูแลการนอนทั่วไป ไม่ใช่การวินิจฉัยหรือรักษาโรค หากมีปัญหาการนอนหรืออารมณ์ต่อเนื่อง ควรปรึกษาแพทย์ หากรู้สึกแย่มาก โทรสายด่วนสุขภาพจิต 1323</p>
+</div>
+
+<div class="card">
+<h2>การเปลี่ยนแปลงนโยบาย</h2>
+<p>หากมีการเปลี่ยนแปลง จะอัปเดตในหน้านี้พร้อมวันที่มีผลใหม่</p>
+<h2 style="margin-top:14px">ติดต่อ</h2>
+<p>sheepsleep.app@gmail.com</p>
+</div>
+
+<div class="card">
+<h2 lang="en">Summary in English</h2>
+<p lang="en">Sheep Sleep works fully without an account. Sleep times, moods, notes, pet progress and (if baby mode is on) a child's nickname, birth date and sleep times are stored on your device. Signing in (Google, Apple or email) is optional; if you sign in we store your email, display name and user ID, and, while you are signed in, your app data (sleep times, moods, notes, pet, settings and baby-mode data if used) is synced automatically to Google Firebase so it follows you to a new phone. It is used only for sign-in and sync. Purchases are handled by Google Play / the App Store and RevenueCat. Ads appear only when you choose to watch a rewarded video (Google AdMob). Notifications are used only for the alarm and bedtime reminder you set, and are scheduled on your device. New users get a free 3-day VIP trial with no payment details and no automatic charge. There are no analytics and we never sell data. You can sign out or delete your account and cloud data at any time in Settings. Contact: sheepsleep.app@gmail.com.</p>
+</div>
+</main>
+</body>
+</html>
