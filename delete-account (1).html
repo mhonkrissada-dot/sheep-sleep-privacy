@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>ลบบัญชี – Sheep Sleep</title>
+<link rel="icon" type="image/png" href="icons/favicon-64.png">
+<style>
+@font-face{font-family:'Mali';font-weight:400;font-display:swap;src:url(fonts/Mali-Regular.woff) format('woff')}
+@font-face{font-family:'Mali';font-weight:700;font-display:swap;src:url(fonts/Mali-Bold.woff) format('woff')}
+:root{--bg:#dfe9f0;--card:#f3f8fb;--ink:#2f4558;--sub:#6b8296;--acc:#5f8cb0}
+@media (prefers-color-scheme:dark){:root{--bg:#1d2a38;--card:#273849;--ink:#e6f0f7;--sub:#9db4c6;--acc:#9cc0dc}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.75 'Mali',system-ui,-apple-system,sans-serif;-webkit-text-size-adjust:100%}
+main{max-width:680px;margin:0 auto;padding:calc(20px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) calc(40px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.card{background:var(--card);border-radius:22px;padding:20px 18px;margin-top:14px}
+h1{font-size:22px;margin:6px 0 2px;line-height:1.3}
+h2{font-size:16px;margin:0 0 6px}
+p,li{margin:0 0 8px}ul{padding-left:20px;margin:0}
+.sub{color:var(--sub);font-size:13px}
+a{color:var(--acc)}
+.back{display:inline-block;margin-bottom:6px;font-size:14px}
+</style>
+</head>
+<body>
+<main>
+<h1>ขอลบบัญชีและข้อมูล</h1>
+<p class="sub">Sheep Sleep – คำนวณเวลานอน · ผู้พัฒนา: Sheep Sleep (sheepsleep.app@gmail.com)</p>
+
+<div class="card">
+<h2>วิธีที่ 1: ลบเองในแอป (มีผลทันที)</h2>
+<ul>
+<li>เปิดแอป Sheep Sleep แล้วแตะปุ่มตั้งค่า (รูปเฟือง) มุมขวาบน</li>
+<li>ไปที่ส่วน "บัญชี" แล้วแตะ "ลบบัญชี"</li>
+<li>แตะอีกครั้งเพื่อยืนยัน "ลบบัญชีถาวร"</li>
+</ul>
+<p>ถ้าระบบแจ้งว่าลบไม่สำเร็จ ให้ออกจากระบบ เข้าสู่ระบบใหม่ แล้วลบอีกครั้ง</p>
+</div>
+
+<div class="card">
+<h2>วิธีที่ 2: ส่งอีเมลขอลบ (กรณีลบแอปไปแล้ว หรือเข้าแอปไม่ได้)</h2>
+<p>ส่งอีเมลจากอีเมลที่ใช้เข้าสู่ระบบ ไปที่ <a href="mailto:sheepsleep.app@gmail.com?subject=Delete%20my%20Sheep%20Sleep%20account">sheepsleep.app@gmail.com</a> หัวข้อ "ขอลบบัญชี Sheep Sleep" เราจะลบให้และตอบกลับภายใน 30 วัน</p>
+</div>
+
+<div class="card" id="data">
+<h2>ลบข้อมูลบางส่วนโดยไม่ต้องลบบัญชี</h2>
+<ul>
+<li>ลบการนอนทีละคืน: แท็บ "บันทึก" → "ประวัติทั้งหมด · แก้ไข" → เลือกคืนที่ต้องการแล้วลบ</li>
+<li>ลบบันทึกการนอนทั้งหมด: แท็บ "บันทึก" → "ล้างบันทึกการนอน"</li>
+<li>ลบอารมณ์และโน้ตของเดือน: แท็บ "อารมณ์" → "สรุปเดือนนี้" → "ล้างข้อมูลเดือนนี้"</li>
+</ul>
+<p>ถ้าเข้าสู่ระบบอยู่ ข้อมูลที่ลบจะถูกลบจากข้อมูลสำรองบนคลาวด์ในการซิงก์ครั้งถัดไปด้วย หรือส่งอีเมลมาที่ <a href="mailto:sheepsleep.app@gmail.com">sheepsleep.app@gmail.com</a> ระบุข้อมูลที่ต้องการลบ เราจะลบให้ภายใน 30 วัน</p>
+</div>
+
+<div class="card">
+<h2>ข้อมูลที่ถูกลบ</h2>
+<ul>
+<li>ข้อมูลบัญชี: อีเมล ชื่อที่ใช้แสดง และรหัสผู้ใช้</li>
+<li>ข้อมูลสำรองบนคลาวด์ทั้งหมด: เวลานอน อารมณ์ โน้ต ข้อมูลแกะ การตั้งค่า และข้อมูลโหมดลูกน้อย</li>
+</ul>
+<p>ข้อมูลทั้งหมดนี้ถูกลบถาวร ไม่มีการเก็บสำรองไว้ต่อ</p>
+</div>
+
+<div class="card">
+<h2>ข้อมูลที่ไม่ได้ลบ หรือเก็บไว้ต่อ</h2>
+<ul>
+<li>ข้อมูลที่อยู่ในเครื่องของคุณ จะอยู่จนกว่าคุณจะกด "ล้างข้อมูล" ในแอป หรือลบแอปออกจากเครื่อง</li>
+<li>ประวัติการซื้อในแอป เก็บโดย Google Play และ RevenueCat ตามที่กฎหมายและนโยบายของบริการนั้นกำหนด เพื่อใช้ยืนยันการซื้อและการคืนเงิน</li>
+</ul>
+</div>
+
+<div class="card" lang="en">
+<h2>English</h2>
+<p><b>Delete in the app:</b> open Sheep Sleep → Settings (gear icon) → Account → Delete account → tap again to confirm. Deletion is immediate.</p>
+<p><b>Request by email:</b> if you no longer have the app, email <a href="mailto:sheepsleep.app@gmail.com?subject=Delete%20my%20Sheep%20Sleep%20account">sheepsleep.app@gmail.com</a> from your sign-in email with the subject "Delete my Sheep Sleep account". We will delete your data and reply within 30 days.</p>
+<p><b>Delete some data only:</b> delete single nights in Log → History, clear the whole sleep log with "Clear sleep log", or clear a month of moods and notes in Mood → Month summary. If you are signed in, the cloud backup is updated on the next sync. You can also email us to delete specific data within 30 days.</p>
+<p><b>Deleted:</b> your account (email, display name, user ID) and all cloud backup data (sleep log, moods, notes, sheep data, settings, baby mode data). Nothing is kept.</p>
+<p><b>Kept:</b> data stored only on your device stays until you clear it or uninstall the app. Purchase records are kept by Google Play and RevenueCat as required for purchase verification and refunds.</p>
+</div>
+</main>
+</body>
+</html>
